@@ -46,6 +46,7 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 Verificação
 <img width="623" height="171" alt="image" src="https://github.com/user-attachments/assets/983b20ef-726e-487f-974f-7c1d8c00d25a" />
 
+  
 Essa saída está dizendo que a sua simulação/cálculo aproximado funcionou perfeitamente e atingiu a precisão exigida.
 O programa comparou a matriz que você gerou com a matriz gabarito (exata) e validou o seguinte:
 • O parâmetro inserido (1E-10): Você definiu que a tolerância máxima aceitável para o erro era de 1.00 × 10⁻¹⁰ (um valor extremamente pequeno).
