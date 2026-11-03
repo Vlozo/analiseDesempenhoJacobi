@@ -1,0 +1,28 @@
+
+Método de Jacobi para solução de sistema linear
+	     Error: 1.000E-12 
+	  Matriz A: A1000.bin 
+	   Vetor B: B1000.bin 
+----------------------------------------------------------------
+	     Error: 1.000E-12 | passos 126
+----------------------------------------------------------------
+
+ Performance counter stats for './solver-jacobi-mt-O3.exec 1E-12 0 A1000.bin B1000.bin saida-teste.bin':
+
+             95,62 msec task-clock                       #    2,582 CPUs utilized             
+                 0      context-switches                 #    0,000 /sec                      
+                 0      cpu-migrations                   #    0,000 /sec                      
+             2.036      page-faults                      #   21,292 K/sec                     
+       423.690.345      cycles                           #    4,431 GHz                       
+        14.766.055      stalled-cycles-frontend          #    3,49% frontend cycles idle      
+     1.154.538.353      instructions                     #    2,72  insn per cycle            
+                                                  #    0,01  stalled cycles per insn   
+       256.182.127      branches                         #    2,679 G/sec                     
+           632.605      branch-misses                    #    0,25% of all branches           
+
+       0,037034346 seconds time elapsed
+
+       0,088507000 seconds user
+       0,007955000 seconds sys
+
+
