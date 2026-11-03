@@ -34,3 +34,20 @@ CPU(s) de nó0 NUMA:                      0-11
 Vulnerability Tsx async abort:           Not affected
 Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
 ```
+
+
+
+## Teste de Validação da Matriz
+
+```bash
+./diff-mat.exec 1E-10 X1000.bin saida-teste.bin
+```
+
+Verificação
+<img width="623" height="171" alt="image" src="https://github.com/user-attachments/assets/983b20ef-726e-487f-974f-7c1d8c00d25a" />
+
+Essa saída está dizendo que a sua simulação/cálculo aproximado funcionou perfeitamente e atingiu a precisão exigida.
+O programa comparou a matriz que você gerou com a matriz gabarito (exata) e validou o seguinte:
+• O parâmetro inserido (1E-10): Você definiu que a tolerância máxima aceitável para o erro era de 1.00 × 10⁻¹⁰ (um valor extremamente pequeno).
+• O Erro Absoluto Realizado (|EA|): A diferença real calculada entre a sua matriz aproximada (saida-teste.bin) e a exata (X1000.bin) foi de apenas 4.07 × 10⁻¹¹.
+• O resultado [true]: Como o erro real (4.07 × 10⁻¹¹) é menor do que o erro máximo permitido (1.00 × 10⁻¹⁰), o teste passou com sucesso.
